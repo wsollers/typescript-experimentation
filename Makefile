@@ -1,8 +1,8 @@
 clean:
 	find . -name "*.js" -type f -delete
 
-build:
+build: clean
 	tsc -p ./tsconfig.json 	
 
-run:
+run: build
 	node ./bin/tsc.js
